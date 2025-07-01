@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fluffy Paws</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --light-bg: #FFF2EB;
+      --alt-bg: #FFE5E5;
+      --main-color: #FFDCDC;
+      --dark-color: #BE5985;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-color);
+    }
+
+    .alt-bg {
+      background-color: var(--alt-bg);
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      background-color: white;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .hero button {
+      background-color: var(--main-color);
+      color: var(--dark-color);
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #f5c3c3;
+    }
+
+    /* Services */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .card button {
+      background-color: var(--main-color);
+      color: var(--dark-color);
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #f5c3c3;
+    }
+
+    /* About Us */
+    .about {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .testimonial {
+      background-color: white;
+      border-left: 5px solid var(--dark-color);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 300px;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+      text-align: center;
+      background-color: white;
+      padding: 50px 20px;
+      border-radius: 16px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 60%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: var(--main-color);
+      color: var(--dark-color);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .newsletter button:hover {
+      background-color: #f5c3c3;
+    }
+
+    /* CTA */
+    .cta {
+      background-color: var(--dark-color);
+      color: white;
+      text-align: center;
+    }
+
+    .cta button {
+      margin-top: 20px;
+      background-color: var(--main-color);
+      color: var(--dark-color);
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: #f5c3c3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ffeae6;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: var(--dark-color);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>Fluffy Paws</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Welcome to Fluffy Paws</h2>
+    <p>Providing loving, safe and cozy boarding for your furry family members.</p>
+    <button>Book Now</button>
+  </section>
+
+  <!-- Services -->
+  <section class="alt-bg">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Dog Boarding</h3>
+        <p>Clean kennels, daily walks and cuddles.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Cat Sitting</h3>
+        <p>Quiet comfy spaces for your feline friends.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Grooming</h3>
+        <p>Keep your pet looking and feeling great.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section>
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+      <p>Fluffy Paws is a family-run pet boarding center with years of experience in taking care of dogs, cats, and small pets. We treat your furry friends like our own, ensuring a comfortable and stress-free stay.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="alt-bg">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"My dog Max had the best time! The staff is so friendly and caring."</p>
+        <strong>- Sarah M.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Highly recommend Fluffy Paws! They kept me updated and my cat was so happy."</p>
+        <strong>- Ali R.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Give Your Pet a Home Away from Home?</h2>
+    <button>Contact Us</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Fluffy Paws. All rights reserved.
+  </footer>
+
+</body>
+</html>
